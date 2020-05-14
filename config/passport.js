@@ -20,7 +20,7 @@ module.exports = function(passport) {
                         if(err) throw err
 
                         if(isMatch) {
-                            return done(null, user) //對應上面return done厚面是false，這次match到了市return user
+                            return done(null, user) 
                         } else {
                             return done(null, false, { message: "that password is incorrect" })
                         }
